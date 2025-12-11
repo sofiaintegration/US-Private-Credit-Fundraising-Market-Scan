@@ -1,0 +1,1 @@
+Este repositório contém o Dashboard [NOME DO DASHBOARD], desenvolvido para visualizar, analisar e monitorar [descrever brevemente o tema do dashboard — ex: performance de fundraising, métricas operacionais, dados de mercado etc.].
