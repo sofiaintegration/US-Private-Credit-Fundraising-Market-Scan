@@ -1,0 +1,1741 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Private Credit Fundraising Market Scan - GemCorp Capital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        #gemcorp-logo {
+            transition: all 0.3s ease;
+        }
+
+        #gemcorp-logo:hover {
+            transform: scale(1.05);
+        }
+
+        .main-content {
+            padding: 40px;
+        }
+
+
+        /* TABLE BUTTONS SECTION */
+        .table-buttons-section {
+            margin: 40px 0;
+            padding: 30px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            border: 2px solid #dee2e6;
+        }
+
+        .table-buttons-section h2 {
+            font-size: 1.8em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .table-buttons-section p {
+            font-size: 1em;
+            color: #6c757d;
+            margin-bottom: 25px;
+        }
+
+        .table-buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .table-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .table-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .table-button:hover::before {
+            opacity: 1;
+        }
+
+        .table-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .table-button-icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .table-button-title {
+            font-size: 1.3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .table-button-desc {
+            font-size: 0.95em;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .table-button-count {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-top: 10px;
+            font-weight: 600;
+        }
+
+        /* TABLE VIEW */
+        .table-view {
+            display: none;
+            padding: 40px;
+            background: white;
+        }
+
+        .table-view.active {
+            display: block;
+        }
+
+        .table-header {
+            margin-bottom: 30px;
+        }
+
+        .table-header h2 {
+            font-size: 2em;
+            color: #1e3c72;
+            margin-bottom: 10px;
+        }
+
+        .table-header p {
+            font-size: 1.1em;
+            color: #6c757d;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .data-table thead {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+        }
+
+        .data-table th {
+            padding: 18px 15px;
+            text-align: left;
+            font-weight: 700;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .data-table td {
+            padding: 16px 15px;
+            border-bottom: 1px solid #e9ecef;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        .data-table tbody tr {
+            transition: background-color 0.2s ease;
+        }
+
+        .data-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .data-table tbody tr:nth-child(even) {
+            background-color: #fafbfc;
+        }
+
+        .rank-cell {
+            font-weight: 700;
+            color: #667eea;
+            font-size: 1.1em;
+        }
+
+        .company-name {
+            font-weight: 700;
+            color: #1e3c72;
+        }
+
+        .capital-amount {
+            font-weight: 600;
+            color: #28a745;
+        }
+
+        .location {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .key-info {
+            font-size: 0.9em;
+            color: #495057;
+        }
+
+                /* HOME VIEW */
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .chapter-card-opportunity {
+            grid-column: 1 / -1;
+            padding: 25px 40px;
+            min-height: 110px;
+        }
+
+        .chapter-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-radius: 15px;
+            padding: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 3px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chapter-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border-color: #667eea;
+        }
+
+        .chapter-number {
+            font-size: 3em;
+            font-weight: 700;
+            color: #667eea;
+            opacity: 0.3;
+            margin-bottom: 10px;
+        }
+
+        .chapter-title {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 15px;
+        }
+
+        .chapter-description {
+            font-size: 1em;
+            color: #4a5568;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .messages-count {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .chapter-card-opportunity {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border: 2px solid #fbbf24;
+            grid-column: 1 / -1;
+            padding: 25px 40px;
+            min-height: 110px;
+        }
+
+        .chapter-card-opportunity:hover {
+            box-shadow: 0 8px 25px rgba(251, 191, 36, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .chapter-card-opportunity .chapter-title {
+            font-size: 1.4em;
+            color: #92400e;
+        }
+
+        .chapter-card-opportunity .chapter-description {
+            color: #78350f;
+        }
+
+        .chapter-card-opportunity .chapter-number {
+            color: #d97706;
+            opacity: 0.4;
+        }
+
+        .chapter-card-opportunity .messages-count {
+            background: #d97706;
+            color: white;
+        }
+
+        /* OPPORTUNITY CARDS */
+        .opportunities-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .opportunity-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 6px solid #f59e0b;
+            transition: all 0.3s ease;
+        }
+
+        .opportunity-card:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2);
+        }
+
+        .opportunity-icon {
+            display: none;
+        }
+
+        .opportunity-title {
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #1e3c72;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .opportunity-reality {
+            background: #eff6ff;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .opportunity-reality strong {
+            color: #1e40af;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .opportunity-reality p {
+            color: #1e3a8a;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .opportunity-gemcorp {
+            background: #fff7ed;
+            padding: 20px;
+            border-radius: 12px;
+            border: 2px solid #fed7aa;
+        }
+
+        .opportunity-gemcorp strong {
+            color: #d97706;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .opportunity-gemcorp p {
+            color: #92400e;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* MARKET CATEGORY TAGS */
+        .market-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 10px;
+        }
+
+        .tag-global {
+            background: #dbeafe;
+            color: #1e40af;
+            border: 1px solid #93c5fd;
+        }
+
+        .tag-em {
+            background: #fef3c7;
+            color: #92400e;
+            border: 1px solid #fbbf24;
+        }
+
+        .message-card-mini.card-em {
+            border-left: 4px solid #fbbf24;
+            background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+        }
+
+        .message-card-mini.card-em:hover {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left-color: #f59e0b;
+        }
+
+        .message-card-mini.card-em .message-number-mini {
+            color: #d97706;
+        }
+
+        /* CHAPTER VIEW */
+        .chapter-view {
+            display: none;
+        }
+
+        .chapter-view.active {
+            display: block;
+        }
+
+        .back-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .back-button:hover {
+            background: #5568d3;
+            transform: translateX(-5px);
+        }
+
+        .messages-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .message-card-mini {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            min-height: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .message-card-mini::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .message-card-mini:hover::before {
+            transform: scaleX(1);
+        }
+
+        .message-card-mini:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
+        }
+
+        .message-card-mini.active {
+            border-color: #667eea;
+            background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .message-card-mini.active::before {
+            transform: scaleX(1);
+        }
+
+        .message-number-mini {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 3em;
+            font-weight: 800;
+            color: #667eea;
+            opacity: 0.35;
+            line-height: 1;
+        }
+
+        .message-card-mini:hover .message-number-mini {
+            opacity: 0.5;
+        }
+
+        .message-card-mini.active .message-number-mini {
+            opacity: 0.6;
+        }
+
+        .message-icon {
+            display: none;
+        }
+
+        .message-title-mini {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #2d3748;
+            line-height: 1.5;
+            position: relative;
+            z-index: 1;
+            padding-right: 50px;
+        }
+
+        /* MESSAGE DETAIL */
+        .message-detail {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            border: 2px solid #e2e8f0;
+            margin-top: 30px;
+        }
+
+        .message-header {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .message-number-large {
+            font-size: 1.2em;
+            color: #667eea;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .message-title-large {
+            font-size: 2em;
+            font-weight: 700;
+            color: #1e3c72;
+            line-height: 1.3;
+            margin-bottom: 20px;
+        }
+
+        .supporting-points {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+
+        .supporting-points h3 {
+            font-size: 1.3em;
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .supporting-points ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .supporting-points li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #4a5568;
+            line-height: 1.7;
+            font-size: 1.05em;
+        }
+
+        .supporting-points li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .source {
+            font-size: 0.75em;
+            color: #a0aec0;
+            font-weight: 400;
+            margin-left: 8px;
+            opacity: 0.7;
+            transition: opacity 0.2s ease;
+        }
+
+        .source:hover {
+            opacity: 1;
+            color: #667eea;
+        }
+
+        .source a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted #cbd5e0;
+        }
+
+        .source a:hover {
+            border-bottom-color: #667eea;
+        }
+
+        .implications {
+            background: linear-gradient(135deg, #fff5f5 0%, #fed7d7 50%, #fff5f5 100%);
+            border-left: 4px solid #e53e3e;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .implications h3 {
+            font-size: 1.3em;
+            color: #c53030;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .implications ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .implications li {
+            padding: 12px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #742a2a;
+            line-height: 1.7;
+            font-size: 1.05em;
+            font-weight: 500;
+        }
+
+        .implications li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #e53e3e;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Navigation dots */
+        .message-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        .nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #cbd5e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .nav-dot:hover {
+            background: #a0aec0;
+            transform: scale(1.2);
+        }
+
+        .nav-dot.active {
+            background: #667eea;
+            width: 30px;
+            border-radius: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .chapters-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .messages-overview {
+                grid-template-columns: 1fr;
+            }
+
+            .message-title-large {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:k4c51eec83074fb293c24bc0ef6d3f8f msdt:dt="string">Germany|3a591bb9-c4ad-4f88-a18e-caab91db09e1</mso:k4c51eec83074fb293c24bc0ef6d3f8f>
+<mso:kf32f47d048e43c5aa8abc5bc1808926 msdt:dt="string"></mso:kf32f47d048e43c5aa8abc5bc1808926>
+<mso:hdc225ca032f4db2a8ffaa8b4e04a165 msdt:dt="string">Brazil|52f9dedf-bd0a-4ec6-9db4-af0cad89b33c</mso:hdc225ca032f4db2a8ffaa8b4e04a165>
+<mso:Sector msdt:dt="string"></mso:Sector>
+<mso:Client msdt:dt="string">8;#Gemcorp|6024b563-fbc5-4957-b585-17fcea53e5dc</mso:Client>
+<mso:Methodology msdt:dt="string"></mso:Methodology>
+<mso:Topic msdt:dt="string"></mso:Topic>
+<mso:oab3c1f2dad346b58ea0ed73f16c0734 msdt:dt="string"></mso:oab3c1f2dad346b58ea0ed73f16c0734>
+<mso:h13a5293ce594cb1b26cd1ea7df343ab msdt:dt="string"></mso:h13a5293ce594cb1b26cd1ea7df343ab>
+<mso:Process msdt:dt="string"></mso:Process>
+<mso:a56a6dc0a9b54c2c8bf5409804592ab6 msdt:dt="string"></mso:a56a6dc0a9b54c2c8bf5409804592ab6>
+<mso:TaxCatchAll msdt:dt="string">6;#English|de0de3a9-8325-4f6a-b157-49db044bde59;#4;#Brazil|52f9dedf-bd0a-4ec6-9db4-af0cad89b33c;#9;#Germany|3a591bb9-c4ad-4f88-a18e-caab91db09e1;#8;#Gemcorp|6024b563-fbc5-4957-b585-17fcea53e5dc</mso:TaxCatchAll>
+<mso:k6c5be0552a249a698d3e3216f5c6b38 msdt:dt="string"></mso:k6c5be0552a249a698d3e3216f5c6b38>
+<mso:pd7e8d50c83d4677879e0339bc7594c8 msdt:dt="string">English|de0de3a9-8325-4f6a-b157-49db044bde59</mso:pd7e8d50c83d4677879e0339bc7594c8>
+<mso:bb966d73dd9d4a3eba8c9d2668d1fa86 msdt:dt="string">Gemcorp|6024b563-fbc5-4957-b585-17fcea53e5dc</mso:bb966d73dd9d4a3eba8c9d2668d1fa86>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 15px;">
+                <img src="gemcorp-logo.png" alt="GemCorp Capital" style="height: 50px; filter: brightness(0) invert(1);" id="gemcorp-logo" onerror="this.style.display='none'">
+                <h1 style="margin: 0;">US Private Credit Fundraising Market Scan</h1>
+            </div>
+            <p>GemCorp Capital Strategic Analysis</p>
+        </div>
+
+        <div class="main-content">
+            <!-- HOME VIEW -->
+            <div id="home-view">
+                <div class="chapters-grid">
+                    <div class="chapter-card" onclick="showChapter(1)">
+                        <div class="chapter-number">01</div>
+                        <div class="chapter-title">MARKET LANDSCAPE: SIZE, TRENDS & DYNAMICS</div>
+                        <div class="chapter-description">
+                            Overview of the size, trends, growth, and fundraising dynamics of the U.S. private credit market to contextualize where the main opportunities and pressures in the sector lie.
+                        </div>
+                        <span class="messages-count">8 Messages</span>
+                    </div>
+
+                    <div class="chapter-card" onclick="showChapter(2)">
+                        <div class="chapter-number">02</div>
+                        <div class="chapter-title">COMPETITIVE LANDSCAPE</div>
+                        <div class="chapter-description">
+                            Macro view of how market concentration, leading players, and competitive trends shape the U.S. private credit fundraising landscape.
+                        </div>
+                        <span class="messages-count">8 Messages</span>
+                    </div>
+
+                    <div class="chapter-card" onclick="showChapter(3)">
+                        <div class="chapter-number">03</div>
+                        <div class="chapter-title">LPs PROFILE & NEEDS</div>
+                        <div class="chapter-description">
+                            A concise view of how different LP profiles, requirements, and emerging decision-making trends shape fundraising dynamics in the U.S. private credit market.
+                        </div>
+                        <span class="messages-count">6 Messages</span>
+                    </div>
+
+                </div>
+
+                <!-- TABLE BUTTONS SECTION -->
+                <div class="table-buttons-section">
+                    <h2>📊 Market Directory Tables</h2>
+                    <p>Explore comprehensive rankings and data on key market participants</p>
+                    <div class="table-buttons-grid">
+                        <button class="table-button" onclick="showTable('emerging-managers')">
+                            <div class="table-button-icon">🚀</div>
+                            <div class="table-button-title">Emerging Managers</div>
+                            <div class="table-button-desc">Top 20 emerging US private credit managers ranked by capital raised and commitments</div>
+                            <div class="table-button-count">20 Managers</div>
+                        </button>
+                        
+                        <button class="table-button" onclick="showTable('top-lps')">
+                            <div class="table-button-icon">💰</div>
+                            <div class="table-button-title">Top LPs</div>
+                            <div class="table-button-desc">Leading Limited Partners investing in US private credit, ranked by AUM and allocation</div>
+                            <div class="table-button-count">20 LPs</div>
+                        </button>
+                        
+                        <button class="table-button" onclick="showTable('placement-agents')">
+                            <div class="table-button-icon">🤝</div>
+                            <div class="table-button-title">Placement Agents</div>
+                            <div class="table-button-desc">Top placement agents for US private credit fundraising by market position</div>
+                            <div class="table-button-count">20 Agents</div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- TABLE VIEWS SECTION -->
+                        <!-- TABLE VIEWS -->
+            <div id="table-emerging-managers" class="table-view">
+                <button class="back-button" onclick="showHome()">← Back to Home</button>
+                <div class="table-header">
+                    <h2>🚀 Top 20 Emerging US Private Credit Managers</h2>
+                    <p>Rankings by Capital Raised/Commitments (2024-2025)</p>
+                </div>
+                <div style="overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Manager</th>
+                            <th>Location</th>
+                            <th>Capital/AUM</th>
+                            <th>Strategy</th>
+                            <th>Key Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank-cell">1</td>
+                            <td class="company-name">Corinthia Global Management</td>
+                            <td class="location">London/New York</td>
+                            <td class="capital-amount">$5.0B</td>
+                            <td>Direct Lending</td>
+                            <td class="key-info">Nomura-backed; raided Barings team</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">2</td>
+                            <td class="company-name">Lane42 Investment Partners</td>
+                            <td class="location">Los Angeles, CA</td>
+                            <td class="capital-amount">$2.0B</td>
+                            <td>Opportunistic Credit</td>
+                            <td class="key-info">Founded by Scott Graves (ex-Ares); Millennium seed</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">3</td>
+                            <td class="company-name">HMC Capital</td>
+                            <td class="location">Sydney/US</td>
+                            <td class="capital-amount">A$5.0B (~$3.2B USD)</td>
+                            <td>Asset-Based Finance</td>
+                            <td class="key-info">Led by Matt Lancaster; acquired Payton Capital</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">4</td>
+                            <td class="company-name">D2 Asset Management</td>
+                            <td class="location">Dallas, TX</td>
+                            <td class="capital-amount">$1.0B</td>
+                            <td>Asset-Based Finance</td>
+                            <td class="key-info">Founded by Doramus brothers; Koch Real Estate seed</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">5</td>
+                            <td class="company-name">Indago Capital</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">$1.0B+</td>
+                            <td>Asset-Based Finance</td>
+                            <td class="key-info">Founded by Akhil Mago (ex-Sculptor); $100M anchor</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">6</td>
+                            <td class="company-name">Square Nine Capital</td>
+                            <td class="location">Toronto, Canada</td>
+                            <td class="capital-amount">$1.0B (target)</td>
+                            <td>Opportunistic Credit</td>
+                            <td class="key-info">Nicole Musicco (ex-CalPERS CIO) & Peter Ma</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">7</td>
+                            <td class="company-name">Canal Road Group</td>
+                            <td class="location">Miami, FL</td>
+                            <td class="capital-amount">$1.0B (via BMO JV)</td>
+                            <td>Direct Lending</td>
+                            <td class="key-info">Don Young & Mike Damaso (ex-CBAM); upper-middle market</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">8</td>
+                            <td class="company-name">Kimmik Capital</td>
+                            <td class="location">London, UK</td>
+                            <td class="capital-amount">£300-500M</td>
+                            <td>Opportunistic Credit</td>
+                            <td class="key-info">Julien Farre (ex-Angelo Gordon); evergreen structure</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">9</td>
+                            <td class="company-name">Kinnerton Hill Capital</td>
+                            <td class="location">London, UK</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Special Situations</td>
+                            <td class="key-info">Jacob Ucar (ex-Park Square); 8-person team</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">10</td>
+                            <td class="company-name">Point72 Private Credit</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Asset-Based Finance</td>
+                            <td class="key-info">Todd Hirsch (ex-Blackstone); part of $37B hedge fund</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">11</td>
+                            <td class="company-name">Audax Private Debt</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">$26.0B</td>
+                            <td>Middle Market Debt</td>
+                            <td class="key-info">Independently owned since 2000; $48B+ deployed</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">12</td>
+                            <td class="company-name">Monroe Capital</td>
+                            <td class="location">Chicago, IL</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Direct Lending</td>
+                            <td class="key-info">Institutional portfolio manager; deal flow accelerating</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">13</td>
+                            <td class="company-name">Golub Capital</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">$70.0B+</td>
+                            <td>Direct Lending</td>
+                            <td class="key-info">Over 950 employees; 30+ year track record</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">14</td>
+                            <td class="company-name">GoldenTree Asset Management</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">$62.0B</td>
+                            <td>Multi-Strategy Credit</td>
+                            <td class="key-info">Employee-owned; founded 2000 by Steven Tananbaum</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">15</td>
+                            <td class="company-name">Thoma Bravo Credit</td>
+                            <td class="location">San Francisco, CA</td>
+                            <td class="capital-amount">Part of $181B</td>
+                            <td>Software/Tech Credit</td>
+                            <td class="key-info">Extension of PE platform; 555+ investments</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">16</td>
+                            <td class="company-name">Fortress Investment Group</td>
+                            <td class="location">New York, NY</td>
+                            <td class="capital-amount">$48.0B</td>
+                            <td>Private Credit Pioneer</td>
+                            <td class="key-info">Part of SoftBank; 20+ years in private credit</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">17</td>
+                            <td class="company-name">Cliffwater Corporate Lending</td>
+                            <td class="location">Los Angeles, CA</td>
+                            <td class="capital-amount">$20.0B+</td>
+                            <td>Interval Fund/FOF</td>
+                            <td class="key-info">Invests across 90+ private credit funds</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">18</td>
+                            <td class="company-name">5C Investment Partners</td>
+                            <td class="location">Not disclosed</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Direct Lending</td>
+                            <td class="key-info">Notable for GP stake financing model</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">19</td>
+                            <td class="company-name">Emerging Manager (TBD)</td>
+                            <td class="location">Various</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Various</td>
+                            <td class="key-info">62 first-time funds launched in 9M 2025</td>
+                        </tr>
+                        <tr>
+                            <td class="rank-cell">20</td>
+                            <td class="company-name">Emerging Manager (TBD)</td>
+                            <td class="location">Various</td>
+                            <td class="capital-amount">Not disclosed</td>
+                            <td>Various</td>
+                            <td class="key-info">323 total private debt launches in 2024</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            
+            <div id="table-top-lps" class="table-view">
+                <button class="back-button" onclick="showHome()">← Back to Home</button>
+                <div class="table-header">
+                    <h2>💰 Top 20 LPs in US Private Credit</h2>
+                    <p>Rankings by AUM/Private Credit Allocation (2024-2025)</p>
+                </div>
+                <div style="overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>LP Name</th>
+                            <th>Type</th>
+                            <th>Location</th>
+                            <th>Total AUM</th>
+                            <th>PC Allocation</th>
+                            <th>Key Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="rank-cell">1</td><td class="company-name">CalPERS</td><td>Public Pension</td><td class="location">Sacramento, CA</td><td class="capital-amount">$502.9B</td><td class="capital-amount">$12.3B (8% target)</td><td class="key-info">Largest US public pension</td></tr>
+                        <tr><td class="rank-cell">2</td><td class="company-name">GIC</td><td>Sovereign Wealth Fund</td><td class="location">Singapore</td><td class="capital-amount">$350B</td><td class="capital-amount">~$35-70B (est.)</td><td class="key-info">Major co-investor</td></tr>
+                        <tr><td class="rank-cell">3</td><td class="company-name">TIAA</td><td>Private Pension</td><td class="location">New York, NY</td><td class="capital-amount">$889B</td><td class="capital-amount">Not disclosed</td><td class="key-info">Major institutional investor</td></tr>
+                        <tr><td class="rank-cell">4</td><td class="company-name">APG Asset Management</td><td>Pension Fund Manager</td><td class="location">Netherlands</td><td class="capital-amount">$432B</td><td class="capital-amount">Not disclosed</td><td class="key-info">Largest pension managers globally</td></tr>
+                        <tr><td class="rank-cell">5</td><td class="company-name">National Pension Service (NPS)</td><td>Public Pension</td><td class="location">Seoul, South Korea</td><td class="capital-amount">$461B</td><td class="capital-amount">Growing</td><td class="key-info">Increasing private markets exposure</td></tr>
+                        <tr><td class="rank-cell">6</td><td class="company-name">MetLife Investment Mgmt</td><td>Insurance</td><td class="location">New York, NY</td><td class="capital-amount">$616.9B</td><td class="capital-amount">$129.1B</td><td class="key-info">Largest infrastructure debt investor</td></tr>
+                        <tr><td class="rank-cell">7</td><td class="company-name">John Hancock (Manulife)</td><td>Insurance</td><td class="location">Boston, MA</td><td class="capital-amount">$400B</td><td class="capital-amount">Significant</td><td class="key-info">Major insurance capital deployer</td></tr>
+                        <tr><td class="rank-cell">8</td><td class="company-name">Ontario Teachers' (OTPP)</td><td>Public Pension</td><td class="location">Toronto, Canada</td><td class="capital-amount">$247B</td><td class="capital-amount">~$25-35B</td><td class="key-info">Pioneer in co-investments</td></tr>
+                        <tr><td class="rank-cell">9</td><td class="company-name">ADIA</td><td>Sovereign Wealth Fund</td><td class="location">Abu Dhabi, UAE</td><td class="capital-amount">$850B+</td><td class="capital-amount">Growing rapidly</td><td class="key-info">$1B anchor to AGL Credit</td></tr>
+                        <tr><td class="rank-cell">10</td><td class="company-name">Mubadala</td><td>Sovereign Wealth Fund</td><td class="location">Abu Dhabi, UAE</td><td class="capital-amount">$302B</td><td class="capital-amount">$10B+ committed</td><td class="key-info">$1B NAV lending with AlpInvest</td></tr>
+                        <tr><td class="rank-cell">11</td><td class="company-name">CDPQ</td><td>Public Pension</td><td class="location">Montreal, Canada</td><td class="capital-amount">$392B</td><td class="capital-amount">Growing</td><td class="key-info">Active in ABF</td></tr>
+                        <tr><td class="rank-cell">12</td><td class="company-name">CalSTRS</td><td>Public Pension</td><td class="location">Sacramento, CA</td><td class="capital-amount">$332B</td><td class="capital-amount">~$20-25B</td><td class="key-info">Second largest US pension</td></tr>
+                        <tr><td class="rank-cell">13</td><td class="company-name">NY State Common Fund</td><td>Public Pension</td><td class="location">Albany, NY</td><td class="capital-amount">$268B</td><td class="capital-amount">~$15-20B</td><td class="key-info">Top 10 global PE investor</td></tr>
+                        <tr><td class="rank-cell">14</td><td class="company-name">Washington State (WSIB)</td><td>Public Pension</td><td class="location">Olympia, WA</td><td class="capital-amount">$210B</td><td class="capital-amount">Growing</td><td class="key-info">Active in private markets</td></tr>
+                        <tr><td class="rank-cell">15</td><td class="company-name">Texas Teachers (TRS)</td><td>Public Pension</td><td class="location">Austin, TX</td><td class="capital-amount">$196B</td><td class="capital-amount">~$12-15B</td><td class="key-info">Expanding private credit</td></tr>
+                        <tr><td class="rank-cell">16</td><td class="company-name">NYC Retirement Systems</td><td>Public Pension</td><td class="location">New York, NY</td><td class="capital-amount">$264B</td><td class="capital-amount">Growing</td><td class="key-info">Called PC "cheap asset"</td></tr>
+                        <tr><td class="rank-cell">17</td><td class="company-name">Florida SBA</td><td>Public Pension</td><td class="location">Tallahassee, FL</td><td class="capital-amount">$235B</td><td class="capital-amount">Not disclosed</td><td class="key-info">Increasing alternatives</td></tr>
+                        <tr><td class="rank-cell">18</td><td class="company-name">Oregon PERS</td><td>Public Pension</td><td class="location">Salem, OR</td><td class="capital-amount">$100B</td><td class="capital-amount">~$7-10B</td><td class="key-info">Active in private credit</td></tr>
+                        <tr><td class="rank-cell">19</td><td class="company-name">ICD Dubai</td><td>Sovereign Wealth Fund</td><td class="location">Dubai, UAE</td><td class="capital-amount">$302B</td><td class="capital-amount">Growing</td><td class="key-info">Increasing PC investments</td></tr>
+                        <tr><td class="rank-cell">20</td><td class="company-name">Millennium Management</td><td>Hedge Fund</td><td class="location">New York, NY</td><td class="capital-amount">$70B+</td><td class="capital-amount">$2B+ seeds</td><td class="key-info">$2B seed to Lane42</td></tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div id="table-placement-agents" class="table-view">
+                <button class="back-button" onclick="showHome()">← Back to Home</button>
+                <div class="table-header">
+                    <h2>🤝 Top 20 Placement Agents for US Private Credit</h2>
+                    <p>Rankings by Market Position & Activity (2024-2025)</p>
+                </div>
+                <div style="overflow-x: auto;">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Placement Agent</th>
+                            <th>Parent/Affiliation</th>
+                            <th>HQ Location</th>
+                            <th>Specialization</th>
+                            <th>Key Info</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td class="rank-cell">1</td><td class="company-name">Probitas Partners</td><td>Independent</td><td class="location">New York, NY</td><td>Private Credit Leader</td><td class="key-info">#1 in PDI's Placement Agent Ranking 2024</td></tr>
+                        <tr><td class="rank-cell">2</td><td class="company-name">Evercore Private Funds</td><td>Evercore Inc.</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">#1 worldwide; $28.9B raised (20 funds)</td></tr>
+                        <tr><td class="rank-cell">3</td><td class="company-name">PJT Park Hill</td><td>PJT Partners</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">$375B+ since inception; 70+ professionals</td></tr>
+                        <tr><td class="rank-cell">4</td><td class="company-name">Eaton Partners (Stifel)</td><td>Stifel Financial</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">$140B+ raised across 190+ funds</td></tr>
+                        <tr><td class="rank-cell">5</td><td class="company-name">Campbell Lutyens</td><td>Independent</td><td class="location">London/New York</td><td>Multi-Strategy</td><td class="key-info">Legacy player; strong reputation</td></tr>
+                        <tr><td class="rank-cell">6</td><td class="company-name">Lazard Private Capital</td><td>Lazard</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">85+ professionals; $100B+ raised</td></tr>
+                        <tr><td class="rank-cell">7</td><td class="company-name">Briarcliffe Credit</td><td>Independent</td><td class="location">New York, NY</td><td><strong>Exclusive PC</strong></td><td class="key-info">First exclusively private credit agency</td></tr>
+                        <tr><td class="rank-cell">8</td><td class="company-name">Rede Partners</td><td>Independent</td><td class="location">London/NY/HK</td><td>Multi-Strategy</td><td class="key-info">100+ professionals; emerging manager focus</td></tr>
+                        <tr><td class="rank-cell">9</td><td class="company-name">Greenstone Equity</td><td>Independent</td><td class="location">Dubai, UAE</td><td>Multi-Strategy</td><td class="key-info">#5 globally; only GCC-HQ in top rankings</td></tr>
+                        <tr><td class="rank-cell">10</td><td class="company-name">UBS Private Funds</td><td>UBS</td><td class="location">Zurich/NY</td><td>Multi-Strategy</td><td class="key-info">Former leader; less active currently</td></tr>
+                        <tr><td class="rank-cell">11</td><td class="company-name">Credit Suisse PFG</td><td>UBS (post-merger)</td><td class="location">Zurich/NY</td><td>Multi-Strategy</td><td class="key-info">Former top player; integrated with UBS</td></tr>
+                        <tr><td class="rank-cell">12</td><td class="company-name">Northern Lights Alt Advisors</td><td>Independent</td><td class="location">Boston, MA</td><td>Multi-Strategy</td><td class="key-info">Representing Canal Road; emerging managers</td></tr>
+                        <tr><td class="rank-cell">13</td><td class="company-name">Asante Capital</td><td>Independent</td><td class="location">London, UK</td><td>Multi-Strategy</td><td class="key-info">$5B raised (8 funds) in 2024</td></tr>
+                        <tr><td class="rank-cell">14</td><td class="company-name">Reach Capital</td><td>Independent</td><td class="location">Paris, France</td><td>European Focus</td><td class="key-info">Advisory to European LPs</td></tr>
+                        <tr><td class="rank-cell">15</td><td class="company-name">Monument Group</td><td>Independent</td><td class="location">London/NY</td><td>Multi-Strategy</td><td class="key-info">Historically strong in placements</td></tr>
+                        <tr><td class="rank-cell">16</td><td class="company-name">MVision PE Advisors</td><td>Independent</td><td class="location">London/NY</td><td>Multi-Strategy</td><td class="key-info">Active across PE, credit, real assets</td></tr>
+                        <tr><td class="rank-cell">17</td><td class="company-name">Mercury Capital</td><td>Independent</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">Established player in fundraising</td></tr>
+                        <tr><td class="rank-cell">18</td><td class="company-name">Jefferies Private Funds</td><td>Jefferies</td><td class="location">New York, NY</td><td>Multi-Strategy</td><td class="key-info">Bank-affiliated; less prominent</td></tr>
+                        <tr><td class="rank-cell">19</td><td class="company-name">Raymond James PCA</td><td>Raymond James</td><td class="location">St. Petersburg, FL</td><td>Multi-Strategy</td><td class="key-info">Active in PE and credit placements</td></tr>
+                        <tr><td class="rank-cell">20</td><td class="company-name">StepStone Group</td><td>Independent/Public</td><td class="location">La Jolla, CA</td><td>Multi-Strategy</td><td class="key-info">Investment consultant + placements</td></tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+<!-- CHAPTER VIEWS -->
+            <div id="chapter-1" class="chapter-view">
+                <button class="back-button" onclick="showHome()">← Back</button>
+                
+                <h2 style="font-size: 2em; color: #1e3c72; margin-bottom: 20px;">Chapter 1: Market Landscape</h2>
+                
+                <h3 style="font-size: 1.4em; color: #1e40af; margin: 30px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%); border-left: 5px solid #1e40af; border-radius: 8px; font-weight: 700;">
+                    🌎 1. GENERAL CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini" onclick="showMessage(1, 1)">
+                        <div class="message-number-mini">1</div>
+                        <div class="message-title-mini">Private credit has become massive and continues growing</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(1, 2)">
+                        <div class="message-number-mini">2</div>
+                        <div class="message-title-mini">Fundraising resilient, but dynamics are shifting</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(1, 3)">
+                        <div class="message-number-mini">3</div>
+                        <div class="message-title-mini">Direct lending dominates but becoming more competitive</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(1, 4)">
+                        <div class="message-number-mini">4</div>
+                        <div class="message-title-mini">Excess dry powder creates market paradox</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.4em; color: #92400e; margin: 50px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border-left: 5px solid #d97706; border-radius: 8px; font-weight: 700;">
+                    🌍 2. EMERGING MARKETS CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini card-em" onclick="showMessage(1, 5)">
+                        <div class="message-number-mini">5</div>
+                        <div class="message-title-mini">Global structural changes redirecting US capital to EM</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(1, 6)">
+                        <div class="message-number-mini">6</div>
+                        <div class="message-title-mini">EM is small US niche with structural growth opportunity</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(1, 7)">
+                        <div class="message-number-mini">7</div>
+                        <div class="message-title-mini">Incumbents dominate EM but leave significant gaps</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(1, 8)">
+                        <div class="message-number-mini">8</div>
+                        <div class="message-title-mini">EM success depends on risk mitigation and discipline</div>
+                    </div>
+                </div>
+
+                <div id="message-1-1" class="message-detail hidden"></div>
+                <div id="message-1-2" class="message-detail hidden"></div>
+                <div id="message-1-3" class="message-detail hidden"></div>
+                <div id="message-1-4" class="message-detail hidden"></div>
+                <div id="message-1-5" class="message-detail hidden"></div>
+                <div id="message-1-6" class="message-detail hidden"></div>
+                <div id="message-1-7" class="message-detail hidden"></div>
+                <div id="message-1-8" class="message-detail hidden"></div>
+            </div>
+
+            <div id="chapter-2" class="chapter-view">
+                <button class="back-button" onclick="showHome()">← Back</button>
+                
+                <h2 style="font-size: 2em; color: #1e3c72; margin-bottom: 20px;">Chapter 2: Competitive Landscape</h2>
+                
+                <h3 style="font-size: 1.4em; color: #1e40af; margin: 30px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%); border-left: 5px solid #1e40af; border-radius: 8px; font-weight: 700;">
+                    🌎 1. GENERAL CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini" onclick="showMessage(2, 1)">
+                        <div class="message-number-mini">1</div>
+                        <div class="message-title-mini">The US private credit market is highly concentrated</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(2, 2)">
+                        <div class="message-number-mini">2</div>
+                        <div class="message-title-mini">Even large managers face strong competition for quality loans</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(2, 3)">
+                        <div class="message-number-mini">3</div>
+                        <div class="message-title-mini">Strategic expansion into alternative sectors and specialty finance</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(2, 4)">
+                        <div class="message-number-mini">4</div>
+                        <div class="message-title-mini">M&A consolidation is accelerating</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.4em; color: #92400e; margin: 50px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border-left: 5px solid #d97706; border-radius: 8px; font-weight: 700;">
+                    🌍 2. EMERGING MARKETS CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini card-em" onclick="showMessage(2, 5)">
+                        <div class="message-number-mini">5</div>
+                        <div class="message-title-mini">Few managers dominate EM fundraising creating extreme concentration</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(2, 6)">
+                        <div class="message-number-mini">6</div>
+                        <div class="message-title-mini">Incumbents have structural advantages new entrants can't replicate quickly</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(2, 7)">
+                        <div class="message-number-mini">7</div>
+                        <div class="message-title-mini">EM differentiation requires ultra-specific defensible niche</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(2, 8)">
+                        <div class="message-number-mini">8</div>
+                        <div class="message-title-mini">Successful new entrants used 1 of 3 proven strategies</div>
+                    </div>
+                </div>
+
+                <div id="message-2-1" class="message-detail hidden"></div>
+                <div id="message-2-2" class="message-detail hidden"></div>
+                <div id="message-2-3" class="message-detail hidden"></div>
+                <div id="message-2-4" class="message-detail hidden"></div>
+                <div id="message-2-5" class="message-detail hidden"></div>
+                <div id="message-2-6" class="message-detail hidden"></div>
+                <div id="message-2-7" class="message-detail hidden"></div>
+                <div id="message-2-8" class="message-detail hidden"></div>
+            </div>
+
+            <div id="chapter-3" class="chapter-view">
+                <button class="back-button" onclick="showHome()">← Back</button>
+                
+                <h2 style="font-size: 2em; color: #1e3c72; margin-bottom: 20px;">Chapter 3: LPs Profile & Needs</h2>
+                
+                <h3 style="font-size: 1.4em; color: #1e40af; margin: 30px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #dbeafe 0%, #eff6ff 100%); border-left: 5px solid #1e40af; border-radius: 8px; font-weight: 700;">
+                    🌎 1. GENERAL CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini" onclick="showMessage(3, 1)">
+                        <div class="message-number-mini">1</div>
+                        <div class="message-title-mini">US LPs dominate globally (~60%) with very specific needs</div>
+                    </div>
+                    <div class="message-card-mini" onclick="showMessage(3, 2)">
+                        <div class="message-number-mini">2</div>
+                        <div class="message-title-mini">Emerging manager programs and family offices as entry point</div>
+                    </div>
+                </div>
+
+                <h3 style="font-size: 1.4em; color: #92400e; margin: 50px 0 20px 0; padding: 15px 20px; background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border-left: 5px solid #d97706; border-radius: 8px; font-weight: 700;">
+                    🌍 2. EMERGING MARKETS CONTEXT
+                </h3>
+                <div class="messages-overview">
+                    <div class="message-card-mini card-em" onclick="showMessage(3, 3)">
+                        <div class="message-number-mini">3</div>
+                        <div class="message-title-mini">US LPs allocating to EM are select subgroup with rigorous criteria</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(3, 4)">
+                        <div class="message-number-mini">4</div>
+                        <div class="message-title-mini">LPs evaluate EM managers through 5 elimination criteria</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(3, 5)">
+                        <div class="message-number-mini">5</div>
+                        <div class="message-title-mini">Decision process for EM is structurally longer than DM</div>
+                    </div>
+                    <div class="message-card-mini card-em" onclick="showMessage(3, 6)">
+                        <div class="message-number-mini">6</div>
+                        <div class="message-title-mini">EM fundraising timing and sequencing follow specific pattern</div>
+                    </div>
+                </div>
+
+                <div id="message-3-1" class="message-detail hidden"></div>
+                <div id="message-3-2" class="message-detail hidden"></div>
+                <div id="message-3-3" class="message-detail hidden"></div>
+                <div id="message-3-4" class="message-detail hidden"></div>
+                <div id="message-3-5" class="message-detail hidden"></div>
+                <div id="message-3-6" class="message-detail hidden"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data structure with all messages
+                const messagesData = {
+            1: {
+                1: {
+                    title: "Private credit has become a massive market and continues to grow",
+                    points: [
+                        "Global private credit AUM reached <strong>~$1.5–2.0 trillion in 2024</strong> <span class='source'>[<a href='https://www.ey.com/en_us/insights/wealth-asset-management/private-credit-report-h1-2025' target='_blank'>EY Private Credit Report H1 2025</a>]</span>",
+                        "Projections indicate growth to approximately <strong>$2.89 trillion by 2031</strong> (CAGR ~9.6%) <span class='source'>[<a href='https://www.grandviewresearch.com' target='_blank'>Grand View Research</a>]</span>",
+                        "Morgan Stanley estimates expansion to <strong>~$5 trillion by 2029</strong> <span class='source'>[<a href='https://www.morganstanley.com/ideas' target='_blank'>Morgan Stanley Research</a>]</span>",
+                        "<strong>North America represents ~60%+</strong> of this market — it's the global epicenter <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Direct lending is the main structural growth driver</strong>: grew from ~9% to <strong>~36% of the market</strong> over 15 years and now accounts for roughly <strong>half of all identified private credit</strong> <span class='source'>[<a href='https://www.mckinsey.com' target='_blank'>McKinsey</a>]</span>"
+                    ],
+                    implications: [
+                        "The space is enormous and continues expanding, validating entry/expansion opportunities — but <strong>growth is concentrated in specific segments</strong> (senior direct lending, specialty finance, evergreen structures)",
+                        "North America as epicenter means <strong>mature infrastructure and sophisticated investors</strong>, but also a <strong>more competitive and saturated market</strong>",
+                        "Direct lending as main driver confirms this is the <strong>\"core\" segment where LPs expect to see track record</strong>, but also where <strong>differentiation is most challenging</strong>",
+                        "Growth projections of 2-3x through 2029 validate <strong>long-term structural momentum</strong> — this is not a passing trend"
+                    ]
+                },
+                2: {
+                    title: "Global private credit fundraising has remained resilient, but dynamics are shifting",
+                    points: [
+                        "Total volume remained stable: Private credit raised <strong>$210 billion in 2024</strong>, essentially flat vs $198 billion in 2023 <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "However, <strong>private markets fundraising AS A WHOLE fell 24%</strong> in traditional commingled vehicles, marking <strong>third consecutive year of decline</strong> <span class='source'>[<a href='https://pitchbook.com' target='_blank'>PitchBook</a>]</span>",
+                        "<strong>Only 153 funds closed in 2024</strong> — lowest count in 8 years and <strong>half the 2021-2022 peak</strong> <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "Fundraising timelines increased: <strong>median of 23+ months in Q1 2025</strong> (vs ~12-18 months historically) <span class='source'>[<a href='https://www.campbell-lutyens.com' target='_blank'>Campbell Lutyens</a>]</span>"
+                    ],
+                    implications: [
+                        "Private credit maintained volume while other asset classes (PE/VC/RE) suffered larger declines — <strong>validating LPs' continued preference for the class</strong>",
+                        "Fewer funds raising similar volume signals <strong>market consolidation</strong>: capital continues flowing, but <strong>investor selectivity has increased dramatically</strong>",
+                        "<strong>Longer fundraising cycles require early planning</strong>: important to start process 2+ years before target close"
+                    ]
+                },
+                3: {
+                    title: "Direct lending continues as largest fundraising strategy and dominates capital flow, but is becoming more competitive",
+                    points: [
+                        "Direct lending raised <strong>~$152.7B in 2024</strong>, representing ~77% of private debt fundraising <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "Direct lending accounts for <strong>~40%+ of originations</strong> in the private debt universe <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "Mezzanine, second most popular strategy, <strong>plummeted 82% to just $6.6 billion</strong> (3.3% of total) due to disappointing performance <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "Competition for quality borrowers began eroding the premium pricing that direct lenders enjoyed — <strong>spread compression</strong> <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Entering direct lending without differentiation is extremely difficult</strong>: need niche strategy, robust governance structure, exclusive borrower access, or proven track record",
+                        "Market is saturated with spread compression (lower margins) — <strong>LPs seek managers with clear \"edge\"</strong> (proprietary non-intermediated origination, sector/geographic niche, deep special situations expertise)",
+                        "<strong>Must avoid being \"another direct lender\"</strong>: positioning should emphasize what makes GemCorp unique vs established competition"
+                    ]
+                },
+                4: {
+                    title: "Excess dry powder creates market paradox - abundant capital but difficult origination, requiring differentiation and discipline",
+                    points: [
+                        "Private credit accumulates <strong>~$418 billion in dry powder</strong> (H1 2024) — capital already raised but not yet invested <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>70% of direct lending dry powder was raised 3+ years ago</strong> (vs 47% in 2023) — evidencing deployment difficulty <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "Competition for quality borrowers is intense <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "Higher rates reinforce private credit appeal: <strong>yields of 9–12% remain well above public bonds (4–6%)</strong> <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>44% of US investors plan to increase private credit exposure</strong> — more than any other alternative asset class <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin Investor Survey</a>]</span>",
+                        "<strong>Banks remain withdrawn from middle-market lending</strong>, creating space for private funds <span class='source'>[<a href='https://www.federalreserve.gov' target='_blank'>Federal Reserve</a>]</span>",
+                        "Even in adverse cycles, private credit has proven <strong>more resilient than equity and real estate</strong> <span class='source'>[<a href='https://www.mckinsey.com' target='_blank'>McKinsey</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Origination has become the main challenge</strong>: capital exists, but difficulty is finding quality borrowers to invest in",
+                        "<strong>LPs demand concrete evidence</strong>: managers need to show real and verifiable pipeline to attract and maintain capital",
+                        "<strong>Differentiation is essential to compete</strong>: important to focus on exclusive or niche origination (selected emerging markets, special situations, structured transactions, less crowded sectors) to generate competitive advantage",
+                        "Despite 44% of LPs planning to increase private credit exposure — more than any other asset class — <strong>disciplined execution has become critical differentiator</strong>: over next 2–3 years, LPs will reward managers who preserve capital and have track record of low losses, not those who grow AUM rapidly"
+                    ]
+                },
+                5: {
+                    title: "Global structural changes are redirecting US capital to EM private credit",
+                    points: [
+                        "International banks cut <strong>~40% of EM exposure since 2015</strong> due to Basel III and growing regulatory capital requirements <span class='source'>[<a href='https://www.imf.org' target='_blank'>IMF</a>]</span>",
+                        "Structural funding gap of <strong>$2-3 trillion remains unaddressed in EM</strong> <span class='source'>[<a href='https://www.worldbank.org' target='_blank'>World Bank</a>]</span>",
+                        "EM yields offer <strong>300-500bps premium over DM (12-17%+ vs 9-12%)</strong>, with resilient spreads even during compression in developed markets <span class='source'>[<a href='https://www.jpmorganinvestments.com' target='_blank'>JP Morgan</a>]</span>",
+                        "EM evolved significantly: <strong>better regulatory frameworks, credit registries, market infrastructure</strong> and sophisticated local managers <span class='source'>[<a href='https://www.worldbank.org' target='_blank'>World Bank</a>]</span>",
+                        "Consolidated track records of incumbents <strong>(12-15% net IRR, loss rates 1-3%)</strong> validate model for historically skeptical LPs <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Frame message as permanent structural shift</strong> (banks exited, specialists entered), not cyclical opportunity",
+                        "<strong>Use incumbents' performance as market validation</strong>, highlighting where GemCorp has competitive advantage",
+                        "<strong>Critical window</strong>: Next 18-24 months ideal to consolidate presence before total saturation"
+                    ]
+                },
+                6: {
+                    title: "EM private credit is small US niche with structural growth and opportunity for differentiated managers",
+                    points: [
+                        "EM private credit represents only <strong>3-5% of $210B raised in US private credit in 2024</strong> ($6-10B) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "Only <strong>20-30 managers raise consistently</strong> for EM pure-play strategies (vs 200+ in DM) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Accelerated growth: 15-20% CAGR</strong> over last 3 years (vs ~10% global) <span class='source'>[<a href='https://pitchbook.com' target='_blank'>PitchBook</a>]</span>",
+                        "<strong>Smaller fund sizes: $200M-$1.5B</strong> (vs $500M-$5B+ in DM), reflecting \"test and scale\" approach <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "First-time EM funds face difficult approval: <strong>only 10-15% reach first close</strong> without robust institutional track record <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Real opportunity, but requires crystal clear differentiation</strong> from first LP contact",
+                        "<strong>Realistic initial target: $200-500M</strong> maximizes probability of success",
+                        "<strong>EM track record must be presented institutionally</strong>, auditable and verifiable"
+                    ]
+                },
+                7: {
+                    title: "Incumbents dominate EM fundraising in US, but leave significant gaps for specialized managers",
+                    points: [
+                        "<strong>Extreme concentration</strong>: Top 10 managers (Oaktree, Ashmore, Gramercy, ECP, etc.) <strong>capture 60-70% of total EM fundraising</strong> <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Ticket size gaps</strong>: Large managers systematically avoid transactions <$50M, leaving <strong>mid-market structurally underserved</strong> <span class='source'>[<a href='https://pitchbook.com' target='_blank'>PitchBook</a>]</span>",
+                        "<strong>Limited geographic coverage</strong>: Incumbents concentrate on 2-3 main geographies (Brazil, Mexico, India, Indonesia), <strong>leaving secondary/frontier markets uncovered</strong> <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Structural rigidity</strong>: Less flexibility for special situations, complex structured credit or customized structures due to rigid mandates <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Avoid \"broad EM\" positioning</strong> - clear niche is mandatory (specific geography, specialized sector, differentiated ticket size)",
+                        "<strong>Exploit empty spaces</strong>: Focus on $10-50M deals, secondary markets with local presence, customized structures that large players don't execute"
+                    ]
+                },
+                8: {
+                    title: "Success in EM fundraising depends on proven risk mitigation and deployment discipline",
+                    points: [
+                        "<strong>Five major LP objections</strong>: FX risk, political/regulatory risk, contract enforcement, liquidity, forced deployment <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "EM funds invest <strong>70%+ of capital in 18-36 months</strong> (vs 12-24 in DM) due to greater complexity <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Create proactive materials</strong> addressing each risk directly before LPs ask",
+                        "<strong>Important to have detailed case studies</strong> showing downside protection in adverse scenarios (COVID, currency crises, defaults)",
+                        "<strong>Communicate as core value</strong>: \"we don't force deployment - we preserve capital when pipeline doesn't meet standards\""
+                    ]
+                }
+            },
+            2: {
+                1: {
+                    title: "The US private credit market is highly concentrated",
+                    points: [
+                        "<strong>Top 20 managers account for the majority</strong> of committed capital and dry powder in the market, and <strong>Top 10 managers hold approximately 40-45%</strong> of all US dry powder <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>5 mega-funds ($10bn+) raised $89 billion alone in 2024</strong> — representing 2/3 of all direct lending and 40%+ of ALL private credit fundraising <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "<strong>84% of capital raised in 2024 went to managers established pre-2008</strong> financial crisis (vs 78% in 2023) <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "Blackstone BCRED reached <strong>$64 billion</strong> (world's largest private debt fund); <strong>Ares, Apollo, HPS and Oaktree dominate</strong> fundraising and origination <span class='source'>[<a href='https://www.blackstone.com' target='_blank'>Blackstone</a>, <a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>60% of LPs expect to allocate with 10 or fewer managers</strong> — relationship consolidation <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin Investor Survey</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Strategic differentiation is essential</strong>: focus on niches, sectors or unique strategies to compete with large players",
+                        "<strong>Credibility with LPs matters</strong>: governance, execution track record and transparency increase investor confidence",
+                        "<strong>Partnership with established player may be necessary</strong>: seed capital from anchor LP, strategic partnership or GP stake sale are viable paths to compete"
+                    ]
+                },
+                2: {
+                    title: "Even large US private credit managers face strong competition for quality loans — proprietary origination has become critical differentiator",
+                    points: [
+                        "Funds like <strong>Ares, Apollo, Blackstone and HPS compete aggressively</strong> for well-structured middle-market borrowers, creating <strong>crowding in premium deals</strong> <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "Smaller or specialized managers differentiate through: <strong>proprietary non-intermediated origination, less crowded sectors, special situations, or alternative geographies</strong> <span class='source'>[<a href='https://pitchbook.com' target='_blank'>PitchBook</a>]</span>",
+                        "<strong>Blue Owl reported that 45%+ of originations in H1 2024 came from existing or past borrowers</strong> — long-term relationships are critical <span class='source'>[<a href='https://www.blueowl.com' target='_blank'>Blue Owl Reports</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Proprietary pipeline is critical</strong>: exclusive origination (not via intermediaries/brokers) allows competing even in saturated markets and maintaining spreads",
+                        "<strong>Pre-existing relationships with sponsors or borrowers are essential</strong>: \"cold calling\" doesn't work in such competitive market",
+                        "<strong>Focus on niches or specific sectors increases competitive advantage</strong>: deep sectoral expertise or complex structures differentiates from generalists"
+                    ]
+                },
+                3: {
+                    title: "Players are making strategic expansion into alternative sectors and specialty finance, making market more heterogeneous",
+                    points: [
+                        "Accelerated expansion into: <strong>corporate finance, commercial finance, consumer & residential finance, infrastructure debt, asset-based lending (ABL)</strong> <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Specialty finance and opportunistic credit represented 30% of mandates in 2024</strong> (vs 21% in 2023) — LPs seek diversification beyond traditional direct lending <span class='source'>[<a href='https://www.withintelligence.com' target='_blank'>With Intelligence</a>]</span>",
+                        "CalPERS (largest US pension fund, <strong>$500bn AUM) signaled strong preference for asset-based financing</strong> by doubling private debt allocation <span class='source'>[<a href='https://www.calpers.ca.gov' target='_blank'>CalPERS</a>]</span>",
+                        "Explosive growth of <strong>evergreen vehicles, non-traded BDCs and interval funds — evergreen funds surpassed $500 billion AUM</strong> (2024) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Alternative strategies (distressed, refinancing, small/mid-market niche lending) are less saturated</strong> than sponsored direct lending <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Expansion into alternative sectors and real economy creates space for differentiation</strong> vs traditional funds",
+                        "<strong>Specialty finance/opportunistic in high demand</strong>: positioning in these strategies beyond (or instead of) pure direct lending can attract capital more easily",
+                        "<strong>Flexible structures (evergreen, BDCs, interval funds) enable agile deployment and wealth channel access</strong> — but require heavy operational infrastructure",
+                        "Alternative or niche strategies (distressed, refinancing, small/mid-market) offer less saturated opportunities",
+                        "<strong>LPs value managers with diversified \"toolkit\"</strong>: ability to do direct lending, special situations, asset-based lending in same fund increases attractiveness"
+                    ]
+                },
+                4: {
+                    title: "M&A consolidation is accelerating — managers without scale seek partnerships or are acquired",
+                    points: [
+                        "<strong>BlackRock acquired HPS Investment Partners for $12 billion</strong> (Dec 2024) to enter private credit at scale — largest sector deal <span class='source'>[<a href='https://www.blackrock.com' target='_blank'>BlackRock</a>]</span>",
+                        "Smaller managers sold GP stakes to obtain seed capital and scale (ex: 5C Investment Partners) <span class='source'>[<a href='https://pitchbook.com' target='_blank'>PitchBook</a>]</span>",
+                        "<strong>Fidelity International abandoned direct lending plans after 2 years</strong>, despite hiring top-tier team — evidence of how difficult build from scratch is <span class='source'>[<a href='https://www.ft.com' target='_blank'>Financial Times</a>]</span>",
+                        "Bank-private credit partnerships exploded: <strong>Morgan Stanley allocating $2-5bn, PNC-TCW ($2.5bn), Wells Fargo-Centerbridge ($5bn), Goldman Sachs raised $21bn</strong> in direct lending <span class='source'>[<a href='https://www.spglobal.com' target='_blank'>S&P Global</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>\"Build vs Buy\" dilemma</strong>: Entering private credit organically is extremely difficult — even mega-players like BlackRock pay billions to acquire established platforms instead of building",
+                        "<strong>Strategic partnerships may be necessary pathway</strong>: Seed capital from institutional anchor LP, bank partnership, or GP stake sale may be more viable paths than standalone",
+                        "<strong>\"Stand-alone\" requires radical differentiation and significant capital</strong>: Managers without scale (~$500M-1B+ AUM) or strategic partner need extremely specific and defensible niche"
+                    ]
+                },
+                5: {
+                    title: "Few managers dominate EM fundraising in US, creating extreme concentration of LP relationships",
+                    points: [
+                        "<strong>Fundraising concentration: Top 10 EM managers</strong> (Oaktree, Ashmore, Gramercy, Pemberton, ECP, CarVal, Värde, BlackRock EM, TCW, GMO) <strong>capture 60-70% of total capital</strong> raised in US for EM strategies <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Repeat LPs dominate: 70-80% of capital raised in EM funds comes from LPs who already invested</strong> with same manager in previous funds - \"new LP acquisition\" represents minority of fundraising <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Closed network</strong>: Majority of US LPs allocating to EM work with only 3-5 known managers, rarely adding new names to roster <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "Fund size concentration: Incumbent funds close in <strong>$500M-$2B range</strong>, while new entrants struggle to reach $200-300M first close <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Placement agent dominance: 80%+ of EM funds use placement agents</strong> (vs 60% in DM), and top agents (Evercore, PJT, Lazard) work almost exclusively with established incumbents <span class='source'>[<a href='https://www.campbell-lutyens.com' target='_blank'>Campbell Lutyens</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Breaking repeat LP cycle is biggest challenge</strong>: Need to offer something radically different for LPs to consider new manager vs adding capital to known incumbent",
+                        "<strong>Placement agent can be barrier</strong>: If top agents don't accept mandate (common for first-time funds), fundraising becomes 2-3x harder - consider boutique agents specialized in EM or direct approach",
+                        "<strong>\"Diversification LPs\" strategy</strong>: Focus on LPs wanting to diversify beyond top 3-5 managers but can't access (waiting lists, closed funds, high minimum tickets)"
+                    ]
+                },
+                6: {
+                    title: "Incumbents have structural fundraising advantages that new entrants cannot replicate quickly",
+                    points: [
+                        "<strong>Institutional track record</strong>: Incumbents have 15-25+ years of audited performance, multiple closed funds (Fund I, II, III, IV+), hundreds of documented deals - impossible to replicate overnight <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Established IR machine</strong>: Investor Relations teams of 5-15 dedicated people, active relationships with 50-100+ LPs, confirmed presence at all major conferences (SuperReturn, ILPA, PEI) <span class='source'>[<a href='https://www.ilpa.org' target='_blank'>ILPA</a>]</span>",
+                        "<strong>Instant brand recognition</strong>: LPs know Oaktree/Ashmore/Gramercy globally - no need to educate about firm credibility, only about specific fund <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Abundant references</strong>: Can provide 20-30+ existing LP references for validation; new managers have zero or 1-2 references maximum <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "Complete legal/compliance infrastructure: 200+ page DDQs ready, Big-4 auditors established, tier-1 fund administrators (SS&C, Citco), robust compliance - all operational <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Superior fundraising velocity</strong>: Incumbents achieve first close in 6-9 months (vs 15-24 months for new entrants) because LPs already know, trust and have accelerated processes <span class='source'>[<a href='https://www.campbell-lutyens.com' target='_blank'>Campbell Lutyens</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Important not to compete on dimensions where advantage is insurmountable</strong>: 20-year track record and 50 LPs aren't replicable - focus on dimensions where GemCorp has edge",
+                        "<strong>Invest heavily in infrastructure before fundraising</strong>: Complete professional DDQ, independent financial audit, tier-1 fund admin, clean legal - amateur infrastructure kills credibility",
+                        "<strong>If lacking brand, must compensate with depth and transparency</strong>: materials need to be 2-3x more detailed, transparent and professional compared to incumbents"
+                    ]
+                },
+                7: {
+                    title: "Differentiation in EM fundraising requires ultra-specific and defensible niche that incumbents don't cover",
+                    points: [
+                        "<strong>Managers who raised successfully (2020-2024) had ultra-specific niches</strong>: Not \"EM broad credit\" but \"Brazil structured credit $15-40M tickets\"; Not \"Asia private debt\" but \"Indonesia consumer finance direct lending\"; Not \"LatAm infrastructure\" but \"Mexico renewable energy project finance\" <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Defensible niches share 4 characteristics</strong>: 1. Geography where incumbents have no established physical presence (office + local team); 2. Ticket size incumbents systematically avoid ($10-40M, outside economic minimum); 3. Sector/structure incumbents don't do (trade finance, structured commodity, NPLs, rescue financing); 4. Demonstrable proprietary origination with verifiable pipeline (not competing for intermediated deals) <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>\"Me-too\" strategies consistently fail</strong>: Managers trying to raise \"Latin America broad credit\" without specific defensible differentiation couldn't reach first close <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Niche needs to be defended with concrete evidence</strong>: Not enough to claim \"unique access\" - must demonstrate with verifiable pipeline, documented relationships, already executed deals",
+                        "<strong>Conscious niche trade-off</strong>: Narrower niche = smaller universe of potential LPs (~30-50 vs 100-150), BUT much more defensible and higher probability of success vs trying to compete broad",
+                        "<strong>Positioning must be repeatable</strong>: Entire team, all materials, all LP interactions must communicate same niche consistently - inconsistency kills credibility"
+                    ]
+                },
+                8: {
+                    title: "Successful new entrants used 1 of 3 proven strategies to overcome incumbent advantages",
+                    points: [
+                        "<strong>Strategy 1 - Spin-out with portable track record (40% of successes 2019-2024)</strong>: Senior team (10-15+ years EM experience) leaves Oaktree/Ashmore/Gramercy/BlackRock; Brings verifiable track record of 15-25 prior deals with documented IRRs; LPs from previous firm often follow to new fund; Examples: Pemberton (ex-PMG), Värde Partners (ex-Oaktree team members) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Strategy 2 - Partnership with institutional anchor (30% of successes)</strong>: Secures $50-100M+ commitment from large institutional LP (pension, sovereign wealth, endowment, DFI) as anchor before broad fundraising; Anchor validates credibility instantly; Examples: Emerging Capital Partners (IFC anchor), Helios (IFC + Abraaj anchor original) <span class='source'>[<a href='https://www.ifc.org' target='_blank'>IFC</a>]</span>",
+                        "<strong>Strategy 3 - Proof of concept via separate accounts (30% of successes)</strong>: Manages $100-300M in separate accounts or structured co-investments for 2-4 years; Builds verifiable institutional track record; Converts separate account investors into fund LPs; Examples: Several Africa managers started managing DFI separate accounts before own fund <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Strategies that consistently failed</strong>: \"Pure startup\" without prior EM track record or connection with established institution; DM managers trying to enter EM without demonstrable expertise or local team; \"Broad EM generalist\" without clear geographic/sectoral/structural specialization <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>Realistic timeline</strong>: Successful strategies took 3-5 years of preparation (building track record, relationships, infrastructure) before formal fundraising <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Honestly assess which strategy applies</strong>: Does GemCorp have verifiable spin-out credentials? Realistic anchor candidate? Pathway to separate accounts? If none of the three, reconsider timing",
+                        "<strong>Hybrid approach can work</strong>: Combine elements of multiple strategies (ex: small spin-out team + anchor LP commitment + some demonstrable co-investments)",
+                        "<strong>Multi-year preparation is norm</strong>: Successful managers invested 3-5 years building foundation before fundraising - rushing dramatically increases failure probability"
+                    ]
+                }
+            },
+            3: {
+                1: {
+                    title: "US LPs dominate global market (~60%) and each type has very specific needs",
+                    points: [
+                        "North America represents <strong>~60% of global private credit market</strong> ($1.2 trillion of $2 trillion total) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Public pension funds</strong> (CalPERS $500bn, Texas Teachers $200bn) require 8-12% stability and rigorous governance; <strong>Insurance companies</strong> seek investment-grade; <strong>Endowments</strong> (Yale $41bn, Harvard $50bn) want 10-15%+ with higher illiquidity tolerance <span class='source'>[<a href='https://www.calpers.ca.gov' target='_blank'>CalPERS</a>, <a href='https://www.yale.edu' target='_blank'>Yale</a>]</span>",
+                        "US <strong>family offices (~6,000 managing $6+ trillion)</strong> growing rapidly, demand customized structures and direct access <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>International LPs allocating to US strategies</strong> (CDPQ $400bn, PSP $230bn, APG €630bn) represent 15-20% of capital in US managers and are <strong>more open to non-established GPs</strong> with proven track record in other geographies <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "Each LP type has very specific <strong>risk tolerance, liquidity horizon and vehicle format</strong> — GP positioning must be customized by investor <span class='source'>[<a href='https://www.ilpa.org' target='_blank'>ILPA</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Customize pitch decks by LP type</strong> from start of fundraising (pension = governance/ESG; endowment = alpha/performance; family office = access/co-invest)",
+                        "<strong>Structure multiple vehicles or feeder structures</strong> at fund launch to accommodate different regulatory profiles and liquidity - can't have just \"one-size-fits-all\" structure",
+                        "<strong>Prioritize international LPs with US mandates as early targets</strong> — they value geographic diversification of managers and may be more receptive to GPs with strong track record outside US"
+                    ]
+                },
+                2: {
+                    title: "Emerging manager programs and family offices represent more accessible entry point for GPs without established US track record",
+                    points: [
+                        "<strong>35-40 institutional US LPs</strong> (pensions, endowments, sovereign wealth) maintain formal programs for emerging managers, with <strong>$25-75M tickets</strong> and specific mandates for diversification <span class='source'>[<a href='https://www.ilpa.org' target='_blank'>ILPA</a>]</span>",
+                        "CalSTRS ($300bn), ILPA, and Fairview Capital lead emerging manager initiatives focusing on diversity, innovation, and access to differentiated deals that mega-funds cannot execute <span class='source'>[<a href='https://www.calstrs.com' target='_blank'>CalSTRS</a>]</span>",
+                        "<strong>Family offices (~6,000 in US managing $6+ trillion)</strong> are more flexible in due diligence, accept smaller tickets ($10-25M), and value direct access and co-investment rights — <strong>40% of family offices allocate to managers with <$500M AUM</strong> <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "LPs investing in non-US managers seek: <strong>(1) valuation arbitrage vs saturated US market, (2) real geographic diversification, (3) access to proprietary deal flow</strong> inaccessible to purely domestic managers <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Prioritize emerging manager programs as anchor target</strong> — these LPs have approval frameworks designed for GPs without long US track record and can accelerate fundraising by 6-12 months vs traditional institutional LPs",
+                        "<strong>Position competitive differential clearly</strong>: specific sectoral expertise, deal flow access via international network, or capability to execute cross-border transactions that pure-play US managers cannot",
+                        "<strong>Family offices should be approached with customized proposals</strong> including co-investment rights, personalized reporting, and quarterly access calls — they value relationship over pure performance metrics and can make commitment decisions in 60-90 days vs 6-12 months for pensions"
+                    ]
+                },
+                3: {
+                    title: "US LPs allocating to EM are select subgroup with specific criteria more rigorous than DM",
+                    points: [
+                        "<strong>Limited universe: Only 25-30% of US institutional LPs</strong> (~150-200 of ~600-700 total) have mandates allowing EM private credit allocation - majority have geographic restrictions or minimum rating that exclude EM <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Larger endowments/foundations</strong>: Yale ($42B), Harvard ($50B), Stanford ($37B), Princeton ($35B) allocate 5-15% to EM debt; <strong>Sophisticated public pensions</strong>: CalPERS ($500B), CalSTRS ($330B), Texas Teachers ($200B) have dedicated EM programs with $500M-$2B+ allocated <span class='source'>[<a href='https://www.yale.edu' target='_blank'>Yale</a>, <a href='https://www.calpers.ca.gov' target='_blank'>CalPERS</a>]</span>",
+                        "<strong>Smaller tickets than DM</strong>: LP commitments in EM funds are $10-25M initial (vs $50-100M in DM) - LPs \"test\" before scaling, even large institutions <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "<strong>Longer approval process</strong>: 9-15 months for first EM commitment (vs 6-9 months DM) due to additional due diligence, specific board approvals, legal review of jurisdictions <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Co-investment as prerequisite</strong>: 70-80% of LPs in EM funds require co-investment rights (20-30% of commitment) to \"test\" execution before committing additional capital in subsequent fundraising <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Focused target list</strong>: Don't approach broad LP universe - focus on 150-200 with explicit EM mandates and allocation history",
+                        "<strong>Expect smaller tickets</strong>: Structure fundraising for 15-25 LPs of $10-25M each (vs 8-12 LPs of $50M+ in DM) - more LPs, more work",
+                        "<strong>Realistic timeline</strong>: Allocate 12-18 months to convert first LP after first meeting - don't expect quick decisions like in DM"
+                    ]
+                },
+                4: {
+                    title: "LPs evaluate EM managers through 5 elimination criteria - each corresponds to specific objection that must be addressed proactively",
+                    points: [
+                        "<strong>Criterion #1 - Demonstrable local presence</strong>: LPs visit offices physically; Want permanent local team (5-10+ people) with 5-10+ years in market; Reference checks with local intermediaries, borrowers, lawyers, auditors; Red flag: \"Cosmetic\" office or \"fly-in fly-out\" team <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Criterion #2 - Verifiable and portable track record</strong>: Minimum 15-25 EM deals with documented and audited IRRs; Loss rates <2% across multiple cycles; Track record must be \"portable\" - current team members executed deals; Red flag: Track record \"at previous firm\" without clarity on who did what <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>Criterion #3 - Structured FX risk mitigation</strong>: 70%+ loans in USD or with demonstrated functional FX hedge; For local currency loans: natural revenue matching; Case studies of portfolio protection during 30-50% depreciations; Red flag: \"We assume FX risk\" or untested hedging <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "<strong>Criterion #4 - Sophisticated structuring and enforcement</strong>: Hard asset collateral with independent conservative valuation (50-60% LTV max); Contracts under NY/UK law with international arbitration; Evidence of real recovery: 1-3 cases where executed collateral and recovered 70%+ of principal; Red flag: Contracts under local law or intangible collateral <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Criterion #5 - Demonstrable and exclusive pipeline</strong>: Deal flow 3-5x fund size with evidence of proprietary sourcing (>60% non-intermediated); Documented relationships: support letters from 10-15 potential borrowers/sponsors; Clear differentiation vs local intermediaries/banks; Red flag: \"Aspirational\" pipeline or dependence on brokers <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Proof point package is mandatory</strong>: Create before fundraising: (i) detailed case studies, (ii) verifiable pipeline with LOIs, (iii) contact reference list, (iv) local presence evidence (lease agreements, staff bios, office photos)",
+                        "<strong>Prepare for intensive diligence</strong>: LPs will conduct: site visits, reference calls, deal-by-deal track record analysis, contract legal review - much deeper process than DM",
+                        "<strong>Due diligence role-play</strong>: Simulate Q&A sessions with advisors before LP meetings - entire team must have consistent and memorable answers"
+                    ]
+                },
+                5: {
+                    title: "Decision process and timing for EM is structurally different and longer than DM",
+                    points: [
+                        "<strong>Typical institutional LP timeline for first EM commitment</strong>: Months 1-3: First meetings, materials review, internal education; Months 4-6: Initial due diligence; Months 7-9: Deep diligence (site visit, deal-by-deal analysis, external consultants); Months 10-12: Board presentation, legal negotiations; Months 13-15: Closing and funding; <strong>Total: 12-15 months</strong> (vs 6-9 months for known DM fund) <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>External advisors more common</strong>: 60-70% of LPs hire external consultants for EM (Mercer, Cambridge Associates, StepStone) vs 30-40% in DM <span class='source'>[<a href='https://www.cambridgeassociates.com' target='_blank'>Cambridge Associates</a>]</span>",
+                        "<strong>Site visits are mandatory</strong>: 90%+ of institutional LPs conduct site visit to EM offices before commitment - non-negotiable even for small commitments ($10-15M) <span class='source'>[<a href='https://www.hamiltonlane.com' target='_blank'>Hamilton Lane</a>]</span>",
+                        "<strong>Repeat commitments much faster</strong>: Fund II from same manager takes 4-6 months (vs 12-15 for Fund I) - LPs who already allocated have accelerated process <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Start outreach 18-24 months before target first close</strong>: Don't wait to have fund \"ready\" to start conversations - educate LPs early creates pipeline",
+                        "<strong>Facilitate site visits proactively</strong>: Organize \"LP tour weeks\" 2-3x per year where multiple LPs visit simultaneously - economies of scale and peer validation",
+                        "<strong>Invest in external validation</strong>: Consider hiring ODD provider (tier-1: ACA, Albourne), financial audit (Big-4), legal opinion (top firms) BEFORE fundraising - LPs require it and accelerates process if already ready"
+                    ]
+                },
+                6: {
+                    title: "Timing and sequencing of EM fundraising follow specific pattern - deviating increases failure probability",
+                    points: [
+                        "<strong>Phase 1 - Pre-marketing (12-18 months before launch)</strong>: Objective: Educate LPs, identify anchor candidates, validate thesis; Activities: \"Soft\" meetings, conference participation (ILPA, SuperReturn), relationship building without \"hard ask\" <span class='source'>[<a href='https://www.ilpa.org' target='_blank'>ILPA</a>]</span>",
+                        "<strong>Phase 2 - Anchor pursuit (12-18 months before first close)</strong>: Objective: Close anchor commitment of $25-50M+; Activities: Deep engagement with anchor candidates, exclusive discussions, potentially customized terms <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Phase 3 - Formal fundraising (post-anchor)</strong>: Objective: First close $100-200M with 8-12 additional LPs; Activities: Broad marketing using anchor as validation, placement agent engagement, roadshows <span class='source'>[<a href='https://www.campbell-lutyens.com' target='_blank'>Campbell Lutyens</a>]</span>",
+                        "<strong>Phase 4 - Final close (12-18 months post-first close)</strong>: Objective: Reach target total ($300-500M); Activities: Deploy initial capital, reporting, add final LPs <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>",
+                        "<strong>Red flags that kill fundraising</strong>: 1. Starting broad marketing WITHOUT anchor = \"desperate\" + zero credibility; 2. First contact being \"commitment ask\" vs relationship building = \"transactional\"; 3. Incomplete materials (DDQ missing sections, no audit, no legal opinions) = \"amateur\"; 4. Team instability during fundraising (key hires/departures) = \"risk\" <span class='source'>[<a href='https://www.preqin.com' target='_blank'>Preqin</a>]</span>"
+                    ],
+                    implications: [
+                        "<strong>Adequate budget and runway</strong>: Underestimating either leads to mid-process failure",
+                        "<strong>Anchor is non-negotiable</strong>: Don't jump to broad fundraising without anchor - must identify realistic anchor candidates (LPs with EM mandate, interest in specific geography/sector, adequate ticket) and focus 100% for 12 months",
+                        "<strong>Patience is strategic</strong>: LPs value managers who don't rush - \"slow build, fast scale\" works better than \"quick launch, slow death\""
+                    ]
+                }
+            }
+        };
+
+        function closeMessage(chapterNum) {
+            // Hide all message details in this chapter
+            const chapterEl = document.getElementById(`chapter-${chapterNum}`);
+            chapterEl.querySelectorAll('.message-detail').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Remove active state from all cards
+            chapterEl.querySelectorAll('.message-card-mini').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Scroll to top of chapter
+            chapterEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+
+        function showTable(tableName) {
+            document.getElementById('home-view').style.display = 'none';
+            document.querySelectorAll('.chapter-view').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.table-view').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.getElementById(`table-${tableName}`).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        function showHome() {
+            document.getElementById('home-view').style.display = 'block';
+            document.querySelectorAll('.chapter-view').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.querySelectorAll('.table-view').forEach(el => {
+                el.classList.remove('active');
+            });
+        }
+
+        function showChapter(chapterNum) {
+            document.getElementById('home-view').style.display = 'none';
+            document.querySelectorAll('.chapter-view').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.getElementById(`chapter-${chapterNum}`).classList.add('active');
+            
+            // Hide all messages in this chapter
+            const chapterEl = document.getElementById(`chapter-${chapterNum}`);
+            chapterEl.querySelectorAll('.message-detail').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Remove active state from all message cards
+            chapterEl.querySelectorAll('.message-card-mini').forEach(el => {
+                el.classList.remove('active');
+            });
+        }
+
+        function showMessage(chapterNum, messageNum) {
+            const messageData = messagesData[chapterNum][messageNum];
+            const messageId = `message-${chapterNum}-${messageNum}`;
+            const messageEl = document.getElementById(messageId);
+            
+            // Hide all other messages in this chapter
+            const chapterEl = document.getElementById(`chapter-${chapterNum}`);
+            chapterEl.querySelectorAll('.message-detail').forEach(el => {
+                el.classList.add('hidden');
+            });
+            
+            // Remove active state from all cards
+            chapterEl.querySelectorAll('.message-card-mini').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Add active state to clicked card
+            event.currentTarget.classList.add('active');
+            
+            // Build and show the message
+            messageEl.innerHTML = `
+                <button class="back-button" onclick="closeMessage(${chapterNum})" style="margin-bottom: 20px;">← View All Messages</button>
+                <div class="message-header">
+                    <div class="message-number-large">MESSAGE ${messageNum}</div>
+                    <div class="message-title-large">${messageData.title}</div>
+                </div>
+                
+                <div class="supporting-points">
+                    <h3>📊 Supporting Points</h3>
+                    <ul>
+                        ${messageData.points.map(point => `<li>${point}</li>`).join('')}
+                    </ul>
+                </div>
+                
+                <div class="implications">
+                    <h3>💡 Practical Implications for GemCorp</h3>
+                    <ul>
+                        ${messageData.implications.map(imp => `<li>${imp}</li>`).join('')}
+                    </ul>
+                </div>
+            `;
+            
+            messageEl.classList.remove('hidden');
+            
+            // Smooth scroll to message
+            messageEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // Initialize
+        showHome();
+    </script>
+</body>
+</html>
